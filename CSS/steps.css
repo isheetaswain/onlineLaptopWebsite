@@ -1,0 +1,48 @@
+/* ---------------------------------------- STEPS ---------------------------------------- */
+
+.steps_bg {
+    background-color: var(--first-color);
+    padding: 3rem 2rem 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.steps_container {
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.steps_title {
+    color: #fff;
+}
+
+.steps_card {
+    background-color: var(--container-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 2.5rem 3rem 2rem 1.5rem;
+}
+
+.steps_card_number {
+    display: inline-block;
+    background-color: var(--first-color-alt);
+    color: #fff;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1-5);
+    transition: .3s;
+}
+
+.steps_card_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.steps_card_description {
+    font-size: var(--small-font-size);
+}
+
+.steps_card:hover .steps_card_number {
+    transform: translateY(-.25rem);
+}

@@ -1,0 +1,36 @@
+/* ---------------------------------------- ABOUT ---------------------------------------- */
+
+.about_container {
+    row-gap: 2rem;
+}
+
+.about_img {
+    width: 280px;
+    justify-self: center;
+}
+
+.about_title {
+    margin-bottom: var(--mb-1);
+}
+
+.about_description {
+    margin-bottom: var(--mb-2);
+}
+
+.about_details {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about_details_description {
+    display: inline-flex;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+}
+
+.about_details_icon {
+    font-size: 1rem;
+    color: var(--first-color);
+    margin-top: .15rem;
+}

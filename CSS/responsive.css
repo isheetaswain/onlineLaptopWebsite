@@ -1,0 +1,236 @@
+/* ---------------------------------------- RESPONSIVE ---------------------------------------- */
+
+/* ---------------------------------------- For small devices ---------------------------------------- */
+
+@media screen and (max-width :320px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .home_img {
+        width: 180px;
+    }
+    .home_title {
+        font-size: var(--h1-font-size);
+    }
+
+    div.steps_bg {
+        padding: 2rem 1rem;
+    }
+
+    div.steps_card {
+        padding: 1.5rem;
+    }
+
+    div.product_container {
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
+
+/* ---------------------------------------- For medium devices ---------------------------------------- */
+
+@media screen and (min-width: 576px) {
+    .steps_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product_description {
+        padding: 0 4rem;
+    }
+    
+    div.product_container {
+        grid-template-columns: repeat(2, 170px);
+        justify-content: center;
+        column-gap: 5rem;
+    }
+    
+    .footer_subscribe {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    nav.nav {
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 3rem;
+    }
+
+    div.nav_toggle, .nav_close {
+        display: none;
+    }
+
+    ul.nav_list {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+
+    div.nav_menu {
+        margin-left: auto;
+    }
+
+    .home_container, .about_container, .questions_container, .contact_container, .footer_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    section.home {
+        padding: 10rem 0 5rem;
+    }
+    
+    .home_container {
+        align-items: center;
+    }
+
+    .home_img {
+        width: 280px;
+        order: 1;
+    }
+
+    .home_social {
+        top: 20%;
+    }
+
+    div.questions_container {
+        align-items: flex-start;
+    }
+
+    div.footer_container {
+        column-gap: 3rem;
+    }
+
+    div.footer_subscribe {
+        width: initial;
+    }
+}
+
+/* ---------------------------------------- For large devices ---------------------------------------- */
+
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .main .section {
+        padding: 8rem 0 1rem;
+    }
+
+    h2.section_title, h2.section_title_center {
+        font-size: var(--h1-font-size);
+    }
+
+    section.home {
+        padding: 13rem 0 5rem;
+    }
+
+    img.home_img {
+        width: 350px;
+    }
+
+    p.home_description {
+        padding-right: 7rem;
+    }
+
+    img.about_img {
+        width: 380px;
+    }
+
+    .steps_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    div.steps_bg {
+        padding: 3.5rem 2.5rem;
+    }
+
+    h3.steps_card_title {
+        font-size: var(--normal-font-size);
+    }
+
+    p.product_description {
+        padding: 0 16rem;
+    }
+
+    div.product_container {
+        padding: 4rem 0;
+        grid-template-columns: repeat(3, 185px);
+        gap: 4rem 6rem;
+    }
+
+    img.product_img {
+        width: 160px;
+    }
+
+    div.product_circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    h3.product_title, span.product_price {
+        font-size: var(--normal-font-size);
+    }
+
+    .questions_container {
+        padding: 1rem 0 4rem;
+    }
+
+    .questions_title {
+        text-align: initial;
+    }
+
+    div.questions_group {
+        row-gap: 2rem;
+    }
+
+    header.questions_header {
+        padding: 1rem;
+    }
+
+    p.questions_description {
+        padding: 1rem 3.5rem 2.25rem 2.75rem;
+    }
+
+    a.footer_logo {
+        font-size: var(--h3-font-size);
+    }
+
+    div.footer_container {
+        grid-template-columns: 1fr .5fr .5fr .5fr;
+    }
+
+    .footer_copy {
+        margin: 7rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    div.home_social {
+        right: -3rem;
+        row-gap: 4.5rem;
+    }
+
+    span.home_social_follow {
+       font-size: var(--small-font-size); 
+    }
+    span.home_social_follow::after {
+        width: 1.5rem;
+        right: -60%;
+    }
+
+    a.home_social_link {
+        font-size: 1.15rem;
+    }
+
+    div.about_container {
+        column-gap: 7rem;
+    }
+
+    a.scroll_up {
+        right: 3rem;
+    }
+}
